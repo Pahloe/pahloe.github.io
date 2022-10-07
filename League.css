@@ -9,6 +9,7 @@ body {
     background-color: #BF5239
 }
 .picker {
+    height: 1/2vh;
     display: flex;
     justify-content: center;
 
