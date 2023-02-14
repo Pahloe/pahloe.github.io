@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Happy Valentines!</title>
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Love_Heart_SVG.svg/645px-Love_Heart_SVG.svg.png?20081212064102">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+      body {
+        background-color: #ffe9e9;
+      }
+      p {
+        font-size: xx-large;
+        font-family: "Pacifico", cursive;
+        color: #8591b4;
+      }
+      #image-popup {
+        margin: 40px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease-in-out;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+      }
+      button {
+        font-family: 'Fredoka One', cursive;
+        font-size: large;
+        height: 50px;
+        width: 150px;
+        border-radius: 25px;
+        background-color: #ffa5a6;
+        color: white;
+        cursor: pointer;
+        border: none;
+        transition: background-color 1s;
+      }
+      button:hover {
+        background-color: #d88b8c;
+      }
+      button:active{
+        background-color: #a46a6a;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Do you want to know who loves you?</p>
+      <button id="popup-button">SHOW ME</button>
+      <img id="image-popup" src="PAOLO.jpg" alt="Image Popup" />
+    </div>
+    <script>
+      const popupButton = document.getElementById("popup-button");
+      const imagePopup = document.getElementById("image-popup");
+
+      popupButton.addEventListener("click", () => {
+        imagePopup.style.visibility = "visible"; // make image visible
+        imagePopup.style.opacity = "0"; // set opacity to 0
+        setTimeout(() => {
+          imagePopup.style.opacity = "1"; // fade in the image
+        }, 100);
+        setTimeout(() => {
+          imagePopup.style.opacity = "0"; // fade out the image
+        }, 2500);
+        setTimeout(() => {
+          imagePopup.style.visibility = "hidden"; // hide the image
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>
