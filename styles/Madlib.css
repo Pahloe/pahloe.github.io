@@ -1,0 +1,11 @@
+#kid, #wolf, #wolf2 {
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;}
+
+body {
+	text-align: center;
+	background-color: #F2F2F2;
+}
+
+h1 {margin-bottom: -20px;}

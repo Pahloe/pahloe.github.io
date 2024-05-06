@@ -1,0 +1,45 @@
+.box {
+	width: 100px;
+	height: 100px;
+}
+
+.b1 { background: red; }
+.b2 { background: green; }
+.b3 {background: blue; }
+
+.in-b {display: inline-block;}
+
+.pos-s { position: static; }
+
+.pos-r { 
+	position: relative; 
+	/* from the */
+	top: 25px;
+	left: 25px;
+}
+
+.pos-a {
+	position: absolute;
+	top: 125px;
+	left: 350px;
+}
+
+.br {border: 5px solid red;}
+
+.pos-f {
+	position: fixed;
+	top: 100px;
+	left: 450px;
+}
+
+.pos-st {
+	position: -webkit-sticky; /*safari*/
+	position: sticky;
+	top: 100px;
+}
+
+.bigbox {
+	width:  300px;
+	height: 1000px;
+	background-color: yellow;
+}

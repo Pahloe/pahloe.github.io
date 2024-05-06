@@ -1,0 +1,26 @@
+img {
+	height: auto;
+	width: 400px;
+}
+
+.fl {
+	position: fixed;
+	top: 80px;
+	left: 50px;
+}
+
+.fr{
+	position: fixed;
+	top: 80px;
+	right: 50px;
+}
+
+h2 {text-align: center;
+	position: sticky;
+	top: 80px;
+	background-color: lightgray;
+}
+
+div {width: 15%;
+	margin: auto;
+	}

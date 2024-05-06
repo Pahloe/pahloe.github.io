@@ -1,0 +1,35 @@
+body { background-color: lightblue; }
+
+table{
+	border: 2px solid blue;
+	margin:  10px;
+	border-collapse: collapse;
+}
+
+th{
+	width: 10%;
+	padding: 15px;
+	border: 1px solid green;
+}
+
+td{
+	padding: 15px;
+	border: 1px solid green;
+}
+
+tr:first-child{
+	background-color: teal;
+	color: #FFD600;
+}
+
+tr td:nth-child(7){
+	background-color: #ff9999;
+}
+
+td::first-line{
+	color: blue;
+	font-size: 1.5em;
+}
+
+tr:nth-child(even){background-color: #dddddd;}
+td:hover, tr td:nth-child(7):hover {background-color:  #BBBBBB;}

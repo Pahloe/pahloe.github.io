@@ -1,0 +1,51 @@
+header {grid-area: hd; background: yellow;}
+nav {grid-area: nv; background: AliceBlue;}
+.article1 {grid-area: a1; background: #DAF7A6;}
+#article2 {grid-area: a2; background: cornsilk;}
+footer {grid-area: ft; background: #D6EAF8;}
+
+.grid{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-auto-rows: 50px;
+	grid-gap: 5px;
+	grid-template-areas:
+		"hd hd hd hd hd hd"
+		"nv a1 a1 a1 a2 a2"
+		"nv a1 a1 a1 a2 a2"
+		"nv a1 a1 a1 a2 a2"
+		"ft ft ft ft ft ft";
+}
+
+	@media (max-width:  950px) {
+	.grid{
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas:
+			"hd hd hd hd"
+			"nv nv nv nv"
+			"a1 a1 a2 a2"
+			"a1 a1 a2 a2"
+			"a1 a1 a2 a2"
+			"a1 a1 a2 a2"
+			"a1 a1 a2 a2"
+			"a1 a1 a2 a2"
+			"a1 a1 a2 a2"
+			"ft ft ft ft";
+	}
+}
+
+@media (max-width:  650px) {
+	.grid{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+			"hd hd"
+			"nv nv"
+			"a1 a1"
+			"a1 a1"
+			"a1 a1"
+			"a2 a2"
+			"a2 a2"
+			"a2 a2"
+			"ft ft";
+	}
+}

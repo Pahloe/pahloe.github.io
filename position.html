@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+	<meta charset="utf-8">
+	<title>Position Pull-ups</title>
+	<link rel="stylesheet" href="styles/position.css">
+</head>
+
+<body>
+	<h1>Understanding position</h1>
+
+<h2>position: static</h2>
+<div class="b1 box in-b pos-s">div 1</div>
+<div class="b2 box in-b pos-s">div 2</div>
+<div class="b3 box in-b pos-s">div 3</div>
+
+<h2>position: relative</h2>
+<div class="b1 box in-b pos-s">div 1</div>
+<div class="b2 box in-b pos-r">div 2 - relative</div>
+<div class="b3 box in-b pos-s">div 3</div>
+
+<h2>position: absolute</h2>
+<div class="b1 box in-b pos-s">div 1</div>
+<div class="in-b br pos-a">
+	<div class="b2 box in-b pos-a">div 2 - absolute</div>
+</div>
+<div class="b3 box in-b pos-s">div 3</div>
+
+<h2>position: fixed</h2>
+<div class="b1 box in-b pos-s">div 1</div>
+<div class="b2 box in-b pos-f">div 2 - fixed</div>
+<div class="b3 box in-b pos-s">div 3</div>
+
+<h2>position: sticky</h2>
+<div class="b1 box in-b pos-s">div 1</div>
+<div class="b2 box in-b pos-st">div 2 - sticky</div>
+<div class="b3 box in-b pos-s">div 3</div>
+
+<div class="bigbox">BigBox</div>
+
+</body>
+</html>

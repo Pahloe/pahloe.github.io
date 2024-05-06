@@ -1,0 +1,44 @@
+.box{
+	width:  100px;
+	min-height: 50px;
+}
+
+.b1{ background: red; }
+.b2{ background: green; }
+.b3{ background: blue; }
+
+#flex1 {
+	display: flex;
+}
+
+#flex2 {
+	display: flex;
+	flex-direction: row-reverse;
+	/*row, column, column-reverse*/
+	/*height:  400px;*/
+	/*justify-content: flex-end;*/
+}
+
+#flex3 {
+	display: flex;
+	justify-content: flex-end;
+	/*flex-start, center*, space-between, space-around,space-evenly*/
+}
+
+#flex4 {
+	display: flex;
+	justify-content: center;
+}
+
+#flex5 {
+	display: flex;
+	justify-content: center;
+	align-items:  center;
+	/* flex start. flex-end, stretch */
+	height:  100px;
+	background-color: yellow;
+}
+
+#flex5>*:first-child {
+	alignt-self: stretch;
+}

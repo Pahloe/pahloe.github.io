@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Gentle JS</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+	<h1>Intro to Javascript</h1>
+
+	<h3 align="center">
+		<button onclick="switchPics();">Switch</button>
+	</h3>
+
+	<script>
+		function switchPics(){
+			let myImg = document.getElementById('pic');
+			//console.log(myImg);
+			//console.log(myImg.src.indexOf("smile"));
+			//if (myImg.src == "images/happy.png")
+			if (myImg.src.indexOf("happy") != -1){
+				myImg.src = "images/sad.png";
+				document.querySelector('h2').innerText = "Sad";
+			}
+			else{
+				myImg.src = "images/happy.png";
+				//document.querySelector('h2').innerText = "Happy";
+				//document.querySelector('h2').innerHTML = "Happy";
+				document.querySelector('h2').textContent = "Happy";
+			}
+		}
+	</script>
+
+	<div>
+		<h2>Happy</h2>
+		<img id="pic" src="images/happy.png" onmouseover="puffUP('pic');"
+		onmouseleave="puffDown('pic');">
+		<img id="pic2" src="images/happy.png" onmouseover="$('#pic2').css('transform', 'scale(1.2)');"
+		onmouseleave="$('#pic2').css('transform', 'scale(1.0)');">
+		<img id="pic3" src="images/happy.png" onmouseover="$('#pic3').css('filter','grayscale(100%)');"
+		onmouseleave="$('#pic3').css('filter','grayscale(0%)');">
+	</div>
+
+	<script>
+		function puffUP(id) {
+			document.getElementById(id).style.transform = "scale(1.2)";
+
+		}
+		function puffDown(id) {
+			document.getElementById(id).style.transform = "scale(1.0)";
+		}
+	</script>
+
+	<div>
+	<h3>Look at the console</h3>
+	<p id = "text1">I am <strong>excited</strong> by coding:
+		 <code>printf("Hello, world!");</code></p>
+	<p onclick="console.log(document.getElementById('text1').innerHTML);">innerHTML</p>
+	<p onclick="console.log(document.getElementById('text1').innerText);">innerText</p>
+	<p onclick="console.log(document.getElementById('text1').textContent);">TextContent</p>
+	</div>
+
+	<!--https://freepapers.net/paper/jWxaLggK-->
+	<h4 align="center">#000000</h4>
+	<p style="font-size: 1.5em;">
+		<span class="color">Color</span> is sensed when white light bounces off an object and is reflected into the eye. Objects appear different <span class="color">colors</span> depending on what <span class="color">colors</span> were absorbed and which were reflected. <span class="color">Color</span> is "seen" by the rods and cones in the eye. Cones detect <span class="color">color</span> and rods detect black, white, and shades of gray. People who cannot see <span class="color">colors</span> properly are <span class="color">color</span>blind. There are many different kinds of <span class="color">colors</span> and they are classified in many different ways (The World Book Encyclopedia p 818, 819).
+	</p>
+
+	<script>
+		let C = document.getElementsByClassName("color");
+		console.log(C);
+		//let L = document.getElementsByClassName("color").length;
+		let L = C.length;
+		console.log(L);
+		for (var i = 0; i < L; i++)
+			C[i].addEventListener("click", changeColor);
+
+		function changeColor() {
+			console.log("clicked")
+			//let CC = document.getElementsByClassName("color");
+			let CC = $('.color');
+			let rndColor = Math.floor(Math.random()*16777215).toString(16);
+			console.log(rndColor);
+			for (var i = 0; i < CC.length; i++)
+				C[i].style.color = "#" + rndColor;
+			document.querySelector('h4').textContent = '#' + rndColor;
+			$('h4').css('color','#'+rndColor);
+
+		}
+	</script>
+
+</body>
+</html>

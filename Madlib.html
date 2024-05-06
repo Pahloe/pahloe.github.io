@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang=en>
+
+	<head>
+		<title>Madlib</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styles/madlib.css">
+
+		<script>
+
+			function changeKid() {
+				const kids = ["Goat", "Kid", "Bunny", "Kitten", "Deer"];
+				let A = document.getElementById("kid");
+				let rndKid = Math.floor(Math.random()*5);
+				A.innerText = kids[rndKid];
+			}
+
+			function changeWolf() {
+				const wolfs = ["Wolf", "Tiger", "Jaguar", "Bear", "Lion"];
+				let B = document.getElementById("wolf");
+				let C = document.getElementById("wolf2");
+				let rndWolf = Math.floor(Math.random()*5);
+				B.innerText = wolfs[rndWolf];
+				C.innerText = wolfs[rndWolf];
+			}
+			
+		</script>
+
+	</head>
+
+	<body>
+		<h1>Madlib: The Kid and the Wolf</h1>
+		<h4>An Aesop Fable</h4>
+		<p>A <span id="kid" onclick="changeKid()">Kid</span> standing on the roof of a house, out of harm's way, saw a 
+		<span id="wolf" onclick="changeWolf()">Wolf</span> passing by and immediately began to taunt and revile him.<br>
+		The <span id="wolf2" onclick="changeWolf()">Wolf</span>, looking up, said, "Sirrah! I hear thee: yet it is not thou who mockest me, but the roof on which thou art standing."</p>
+	
+	</body>
+</html>

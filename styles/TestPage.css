@@ -1,0 +1,36 @@
+* {color:  blue}
+p {color: red}
+
+.oi {color:  orange; font-style: italic}	
+
+#best {color: purple;}
+
+[alt] {border: 10px solid red;}
+[src$="420"] {border: 10px dashed red;}
+
+p::first-letter { font-size: 200%; }
+img:hover{transform: scale(1.1);}
+
+h1 ~ p {color: green;}
+h1 + p {color:  black;}
+
+div>p{background-color: gray;}
+
+.bp {
+	border:  2px dashed black;
+	/* border-top:  2px solid black; */
+	border-top-style: solid;
+	border-color:  red green orange blue;
+}
+
+.mp {
+	margin: -8px;
+	margin:  5% auto;
+	margin:  1em auto 2em;
+	margin:  2px 1em 0 auto;
+}
+
+.pp {
+	padding:  30px;
+	padding:  10px 30px;
+}

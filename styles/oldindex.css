@@ -1,0 +1,17 @@
+* {font-family: arial, helvetica, sans-serif;}
+header {background-color: black; text-align: center; padding: 5px}
+header a{color: white;}
+h1 {color: white;}
+
+body{background-color: whitesmoke;}
+main{display: flex; margin: 50px;}
+.AssignmentsSection, .ImagesSection{width:  50%; text-align: center;}
+
+.AssignmentsSection {background-color: white;}
+.AssignmentsSection a{color: black;}
+
+.ImagesSection {background-color: black; color: white;}
+.ImagesSection a{color: white;}
+
+
+footer {background-color: lightgray; color: #0C090A; text-align: center;}

@@ -1,0 +1,23 @@
+body {
+	background-color: #FFFF66;}
+
+header, nav, main, footer {
+	background-color: #99CCFF;
+	margin: 10px; 
+	padding: 10px;
+}
+
+article {
+	background-color: #CCFF99;
+	margin: 10px;
+	padding:  10px;
+}
+
+.cb { 
+	color: blue;
+	text-align: center;
+}
+
+a:hover{
+	color: #FFFF66;
+}

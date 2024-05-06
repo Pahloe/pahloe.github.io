@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Form Flutter Kicks</title>
+	<link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+	<h1>Intro to Forms</h1>
+	<form method="post" action="http://satoshi.cis.uncw.edu/~stokerg/FormProcess.php">
+	<!--form method="get" action="http://www.randyconnolly.com/tests/process.php"-->
+		<fieldset>
+		<legend>Organize form parts</legend>
+
+			<fieldset>
+			<legend>Personal Data</legend>
+				<label for="name">Enter your name:<br></label>
+				<input type="text" id="name" name="name" required>
+				<br>
+				<br>
+				
+				<label for="password">Enter your favorite password:<br></label>
+				<input type="password" id="password" name="password" required minlength="10">
+				<br>
+				<br>
+
+
+				<label for="secret">Deepest secret:<br></label>
+				<textarea name="secret" placeholder="Reveal your deepest secret..." id="secret"></textarea>
+
+			</fieldset>
+			<br><br>
+
+
+
+			<fieldset>
+			<legend>Spend some $$</legend>
+				<label for="item">Clothing item:<br></label>
+				<select name="item" id="item">
+					<option>Choose an item</option>
+					<option>Shirt</option>
+					<option>Pants</option>
+					<option>Jacket</option>
+					<option>Hat</option>
+				</select>
+				<br><br>
+
+				<label>Size:<br></label>
+				<label><input type="radio" name="size" value="S">Small<br></label>
+				<label><input type="radio" name="size" value="M">Medium<br></label>
+				<label><input type="radio" name="size" value="L">Large<br></label>
+				<label><input type="radio" name="size" value="XL">Extra Large<br></label>
+				<br>
+
+				<label for="qty">Quantity:<br></label>
+				<input type ="number" name="qty" id="qty" min="1" max="12">
+				<br><br>
+
+				<label for="date">Desired Delvery Date:</label><br>
+					<input type="date" name="date" id="date">
+					<br><br>
+
+				<label for="gift">Check box for gift-wrapping:</label>
+					<input type="checkbox" name="gift" id="gift">
+				<br><br>
+
+				<input type="submit" name="submit" value="Order!">
+				<input type="reset" value="Clear Form">
+
+
+
+			</fieldset>
+
+		</fieldset>
+	</form>
+</body>
+</html>

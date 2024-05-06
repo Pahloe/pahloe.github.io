@@ -1,0 +1,15 @@
+.box {
+	width: 100px;
+	height: 100px;
+}
+
+.b1 { background: red; }
+.b2 { background: green; }
+.b3 {background: blue; }
+
+.inline { display: inline; }
+.block { display: block; }
+
+.in-b {display: inline-block;}
+.d-n{ display: none }
+.v-h{ visibility: hidden; }

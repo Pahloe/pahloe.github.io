@@ -1,0 +1,22 @@
+body {
+	background-color:  #EBD5B3;
+}
+
+div {
+	width: 50%;
+}
+
+#one {
+	color: green;
+	float: left;
+}
+
+#two {
+	float: right;
+
+}
+
+p {
+	text-align: justify;
+	margin: 10px;
+}
